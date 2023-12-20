@@ -1,0 +1,17 @@
+ import{useState} from "react";
+function FunctionalCounter(){
+ const [counter,setcounter] =useState(0);
+ const [varname,funname] =useState("Ukamaka");
+const increment =()=>{
+ setcounter(counter + 1)
+};
+    return (
+    <div>
+    <div>Conter value:{counter}</div>
+   <div>
+    <button onClick={increment} >increment</button>
+    </div>
+    </div> 
+    );      
+    }
+export default FunctionalCounter
